@@ -22,10 +22,50 @@
   }
 }
 
+@font-face {
+  font-family: 'Wicklow';
+  src: url('/fonts/wicklow-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('/fonts/figtree-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('/fonts/figtree-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('/fonts/figtree-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background: transparent;
-  color: var(--foreground);
+  color: #0c0d3b;
   font-family: 'Figtree', Arial, Helvetica, sans-serif;
+}
+
+.font-wicklow {
+  font-family: 'Wicklow', serif;
+  font-stretch: normal;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: 'Wicklow', serif;
+  font-weight: 700;
+  color: #fff;
 }
 
 .header {

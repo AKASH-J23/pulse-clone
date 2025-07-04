@@ -42,31 +42,48 @@ const Hero = () => {
           src="/generic/Homepage-hero-videos/Pulse-Video-Desktop.mp4"
         />
       </div>
-      {/* Overlay and tint for better text visibility */}
-      <div className="heroHome__overlay absolute z-10 top-0 left-0 w-full h-full bg-black/30 pointer-events-none" />
-      <div className="heroHome__tint absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 to-transparent pointer-events-none" />
-      <div className="heroHome__bottom absolute z-20 bottom-0 left-0 w-full flex flex-col items-center pb-12">
+      <div className="heroHome__bottom absolute z-20 bottom-0 left-0 w-full flex flex-row items-end justify-between px-12 pb-8">
         {/* Scroller Words Swiper */}
-        <div className="heroHome__scroller-words w-full max-w-xs mx-auto mb-6">
+        <div
+          className="heroHome__scroller-words mb-0 flex items-center overflow-hidden"
+          style={{ minWidth: 'min(50vw, 700px)', height: '6.5rem' }}
+        >
           <Swiper
             direction="vertical"
             loop
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             modules={[Autoplay]}
             slidesPerView={1}
-            className="h-10"
+            className="h-full"
+            style={{ height: '6.5rem' }}
           >
             {scrollerWords.map((word, idx) => (
               <SwiperSlide key={idx}>
-                <div className="swiper-slide heroHome__scroller-word text-white text-3xl md:text-4xl font-bold text-center drop-shadow-lg">
-                  {word}
+                <div
+                  className="swiper-slide heroHome__scroller-word flex items-center h-full"
+                  style={{ height: '6.5rem' }}
+                >
+                  <span
+                    className="font-wicklow"
+                    style={{
+                      fontSize: '6rem',
+                      lineHeight: '1.05',
+                      fontWeight: 700,
+                      letterSpacing: '-0.04em',
+                      color: 'white',
+                      textShadow: '0 2px 8px rgba(0,0,0,0.10)',
+                      display: 'inline-block',
+                    }}
+                  >
+                    {word}
+                  </span>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
         {/* Latest Slider Swiper */}
-        <div className="heroHome__latest w-full max-w-md mx-auto">
+        <div className="heroHome__latest" style={{ minWidth: 320, maxWidth: 400, width: '30vw' }}>
           <div className="heroHome__latest__progress" data-slides={latestSlides.length}>
             <div className="flex justify-between items-center text-[16px] leading-[24px] text-white pb-6 mb-6">
               <p>{`0${activeIndex + 1}`}</p>
