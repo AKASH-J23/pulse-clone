@@ -9,6 +9,8 @@ import ProjectCards from './components/ProjectCards';
 import Testimonial from './components/Testimonial';
 import ClientLogoSlider from './components/ClientLogoSlider';
 import Footer from './components/Footer';
+import ClientStats from './components/ClientStats';
+import AwardsSection from './components/AwardsSection';
 
 export default function Home() {
   return (
@@ -23,6 +25,10 @@ export default function Home() {
       <ProjectCards />
       <Testimonial />
       <ClientLogoSlider />
+      <hr className="section-divider" />
+      <ClientStats />
+      {/* <hr className="section-divider" /> */}
+      <AwardsSection />
       <Footer />
       {/* Other sections will be added here as components */}
     </>

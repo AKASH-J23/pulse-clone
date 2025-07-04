@@ -119,3 +119,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, .font-heading {
   font-family: 'Wicklow', serif;
   font-weight: 700;
 }
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #b5cef5;
+  margin: 40px 0;
+  width: 100%;
+}
