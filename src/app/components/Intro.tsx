@@ -1,7 +1,7 @@
 import React from "react";
 
 const Intro = () => (
-  <section className="pt-10 lg:pt-12 mb-10 lg:mb-12">
+  <section className="pt-10 lg:pt-12 mb-10 lg:mb-12 ml-70">
     <div className="container mx-auto px-4">
       <div className="max-w-[1200px] ml-0">
         {/* <h1 className="font-wicklow font-bold text-[#060725] text-4xl md:text-5xl lg:text-6xl leading-[1.25] text-left mb-0">

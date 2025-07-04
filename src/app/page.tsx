@@ -8,7 +8,7 @@ import SectorSlider from './components/SectorSlider';
 import ProjectCards from './components/ProjectCards';
 import Testimonial from './components/Testimonial';
 import ClientLogoSlider from './components/ClientLogoSlider';
-import Footer from './components/Footer';
+import Footer, { GetInTouchSection } from './components/Footer';
 import ClientStats from './components/ClientStats';
 import AwardsSection from './components/AwardsSection';
 
@@ -29,6 +29,7 @@ export default function Home() {
       <ClientStats />
       {/* <hr className="section-divider" /> */}
       <AwardsSection />
+      <GetInTouchSection />
       <Footer />
       {/* Other sections will be added here as components */}
     </>

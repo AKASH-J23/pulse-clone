@@ -59,8 +59,9 @@ const Header = () => {
       <div className="header__inner flex items-center justify-between max-w-[1600px] mx-auto px-8 py-4">
         <Link className="header__logo" href="/">
           <span className="sr-only">Go to home</span>
+          <h1 className="text-2xl font-bold" style={{ fontFamily: 'Figtree, serif', letterSpacing: '-1px', color: '#fff' }}>Nuvanta Consult</h1>
           {/* SVG logo from original site */}
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="190"
             height="77"
@@ -74,7 +75,7 @@ const Header = () => {
               fill="currentColor"
               d="M131.353 20.015s-3.497 1.574-3.497 4.274c0 2.701 2.498 5.635 9.528 8.98 7.029 3.344 11.044 7.458 11.044 12.538s-4.211 9.032-13.863 9.032c-9.653 0-14.435-3.595-14.435-3.595v-8.925h1.303s1.659 11.536 13.132 11.536c4.853 0 5.424-3.309 5.424-4.49 0-1.18-.464-4.489-8.226-8.03-7.761-3.541-12.293-7.316-12.293-12.592 0-5.276 5.478-8.728 11.883-8.728ZM190 35.433s.535-15.776-15.362-15.776-17.289 15.561-17.289 17.78c0 2.217 1.927 16.365 16.879 16.365 8.029 0 12.507-4.704 14.273-9.194 0 0-2.444 4.079-12.56 4.079-5.103-.054-8.797-4.275-9.011-8.246-.178-3.488 0-8.729 0-8.729s.429-11.232 7.672-11.232c4.996.054 5.781 7.226 5.781 14.953h9.635H190Z"
             />
-          </svg>
+          </svg> */}
         </Link>
         <div className="flex items-center gap-4">
           <Link className="header__contact btn btn--icon" href="/contact">
