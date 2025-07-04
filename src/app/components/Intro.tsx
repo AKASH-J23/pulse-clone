@@ -11,7 +11,7 @@ const Intro = () => (
           <p className="font-bold mb-2 text-base text-left text-[#060725]">Construction consultants</p>
           <hr className="border-blue-200 mb-6 w-full" />
           <p className="mx-auto mt-6 text-2xl md:text-3xl lg:text-4xl text-justify max-w-4xl font-wicklow font-bold text-[#060725]">
-          At Pulse Consult, we're a genuinely empowering construction consultancy. Specialising in project management and controls, quantity surveying, principal designer and CDM services, our construction consultants build game changing, project shaping relationships – bringing people together to deliver exceptional, added value results.
+          At Nuvanta Consult, we're a genuinely empowering construction consultancy. Specialising in project management and controls, quantity surveying, principal designer and CDM services, our construction consultants build game changing, project shaping relationships – bringing people together to deliver exceptional, added value results.
           </p>
         </div>
       </div>

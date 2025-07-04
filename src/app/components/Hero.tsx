@@ -10,7 +10,7 @@ const latestSlides = [
   {
     href: "/careers",
     title: "We're hiring!",
-    subtitle: "Discover careers at Pulse",
+    subtitle: "Discover careers at Nuvanta",
   },
   {
     href: "/about/culture",

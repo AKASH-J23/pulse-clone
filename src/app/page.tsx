@@ -19,6 +19,7 @@ export default function Home() {
       <FeatureList />
       <ServicesList />
       <SectorSlider />
+      <div className="h-40" />
       <ProjectCards />
       <Testimonial />
       <ClientLogoSlider />

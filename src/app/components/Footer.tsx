@@ -34,7 +34,7 @@ const Footer = () => (
       </div>
       <div className="text-xs text-center md:text-right">
         <p>
-          Pulse Associates Ltd trading as Pulse Consult. Copyright © Pulse Consult 2025 | All rights reserved
+           Nuvanta Associates Ltd trading as Nuvanta Consult. Copyright ©  Nuvanta Consult 2025 | All rights reserved
         </p>
       </div>
     </div>

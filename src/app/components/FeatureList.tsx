@@ -17,7 +17,7 @@ const features = [
     number: "03",
     title: "Create positive, sustainable places",
     description:
-      "From first steps to final fit-out, at Pulse Consult we embed sustainability into every aspect of your project, making a positive, lasting impact on people and planet.",
+      "From first steps to final fit-out, at Nuvanta Consult we embed sustainability into every aspect of your project, making a positive, lasting impact on people and planet.",
   },
 ];
 
