@@ -58,22 +58,17 @@ const logos = [
 
 const ClientLogoSlider = () => (
   <section className="pb-14 md:pb-20 lg:pb-24 overflow-hidden" data-block="blockLogoSlider">
-    <div className="container">
+    <div className="container ml-40">
       <div className="reveal">
         <div className="text-center w-full">
-          <h3 className="text-2xl md:text-4xl font-bold pb-9">Proud to work with</h3>
+          <h3 className="text-2xl md:text-4xl font-bold pb-9 -p-26 ml-4">Proud to work with</h3>
           <Swiper
             modules={[Autoplay]}
             autoplay={{ delay: 1000, disableOnInteraction: false }}
             speed={3000}
-            loop={logos.length > 6}
+            loop={logos.length > 4}
             slidesPerView={4}
             spaceBetween={40}
-            breakpoints={{
-              640: { slidesPerView: 5 },
-              1024: { slidesPerView: 6 },
-              1280: { slidesPerView: 8 },
-            }}
             className="sliderLogo"
           >
             {logos.map((logo) => (
