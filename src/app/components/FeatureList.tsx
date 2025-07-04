@@ -23,27 +23,45 @@ const features = [
 
 const FeatureList = () => (
   <section className="pb-14 md:pb-20 lg:pb-24" data-block="blockBulletList">
-    <div className="container">
-      <div className="reveal">
-        <div className="grid md:grid-cols-8 lg:grid-cols-12 gap-y-8 md:gap-8">
-          <div className="col-span-full md:col-span-4">
-            <p className="font-semibold md:pt-2">What we do</p>
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-12 gap-y-8 md:gap-8 justify-center items-start">
+        <div className="col-span-12 lg:col-span-2 flex items-start mb-4 lg:mb-0">
+          <p className="font-semibold text-lg text-left text-[#060725]">What we do</p>
+        </div>
+        {/* Left column: 01 above 03 */}
+        <div className="col-span-12 md:col-span-5 flex flex-col gap-8">
+          <div className="flex gap-4 items-start mb-0">
+            <p className="text-5xl md:text-6xl font-wicklow font-bold text-[#060725] shrink-0 min-w-[64px] text-left leading-none mr-2">
+              {features[0].number}
+            </p>
+            <div className="flex flex-col gap-2 relative pl-2">
+              <p className="font-semibold text-base md:text-lg text-left text-[#060725] mb-1">{features[0].title}</p>
+              <div className="font-light text-left text-[#060725] text-sm md:text-base">
+                <p>{features[0].description}</p>
+              </div>
+            </div>
           </div>
-          <div className="col-span-full lg:col-span-8">
-            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-x-9 gap-y-12">
-              {features.map((feature, idx) => (
-                <div className="col-span-1 flex gap-3" key={feature.number}>
-                  <p className="text-6xl font-heading shrink-0 min-w-[64px]">
-                    <span>0</span>{idx + 1}
-                  </p>
-                  <div className="flex flex-col gap-3 relative before:absolute before:h-full before:w-[1px] before:left-0 before:bottom-0 before:bg-blue-200 pl-6">
-                    <p className="font-semibold">{feature.title}</p>
-                    <div className="font-light ck">
-                      <p>{feature.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+          <div className="flex gap-4 items-start mb-0">
+            <p className="text-5xl md:text-6xl font-wicklow font-bold text-[#060725] shrink-0 min-w-[64px] text-left leading-none mr-2">
+              {features[2].number}
+            </p>
+            <div className="flex flex-col gap-2 relative pl-2">
+              <p className="font-semibold text-base md:text-lg text-left text-[#060725] mb-1">{features[2].title}</p>
+              <div className="font-light text-left text-[#060725] text-sm md:text-base">
+                <p>{features[2].description}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Right column: 02 */}
+        <div className="col-span-12 md:col-span-5 flex gap-4 items-start mb-0 md:ml-8">
+          <p className="text-5xl md:text-6xl font-wicklow font-bold text-[#060725] shrink-0 min-w-[64px] text-left leading-none mr-2">
+            {features[1].number}
+          </p>
+          <div className="flex flex-col gap-2 relative pl-2">
+            <p className="font-semibold text-base md:text-lg text-left text-[#060725] mb-1">{features[1].title}</p>
+            <div className="font-light text-left text-[#060725] text-sm md:text-base">
+              <p>{features[1].description}</p>
             </div>
           </div>
         </div>

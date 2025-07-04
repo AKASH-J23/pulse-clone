@@ -49,6 +49,7 @@ const Hero = () => {
           style={{ minWidth: 'min(50vw, 700px)', height: '6.5rem' }}
         >
           <Swiper
+            key="hero-scroller"
             direction="vertical"
             loop
             autoplay={{ delay: 4000, disableOnInteraction: false }}
